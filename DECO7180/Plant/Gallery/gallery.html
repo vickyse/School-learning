@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="icon" type="image/x-icon" href="imgs/logo.png">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="jquery_3.7.1.js"></script>
+    <script src="gallery.js"></script>
+</head>
+<body>
+    <header class="header_and_mainpart">
+        <div class="header_conponents">
+            <img src="imgs/PlantsDiscover.png" alt="Title Picture." class="picture_size">
+            <!--Add a link to the image here-->
+        </div>
+        <div class="header_conponents" id="search_bar">
+            <input type="text" id="search_input" placeholder="Type something...">
+            <button id="search-button">
+                <img src="imgs/search.png" id="search_icon">
+                <!--Add link to search here-->
+            </button>
+            <!--search result panel-->
+            <div class="search-dropdown-container"></div>
+        </div>
+        <div class="header_text_conponents">
+            <span class="text_in_header"><a href="https://deco1800teams-stu05t10coldbrew.uqcloud.net/Plant/Index/index.html"
+                class="link">Main</a></span> <!--add link to homepage-->
+              <span class="text_in_header"><a href="https://deco1800teams-stu05t10coldbrew.uqcloud.net/Plant/Gallery/gallery.html"
+                  class="link">Gallery</a></span>
+              <!--add link to gallery-->
+              </span>
+        </div>
+    </header>
+
+    <div class="main">
+        <!--Left Region-->
+        <div class="left"></div>
+        <!--Right content area Start-->
+        <div class="main_content">
+            <!--introduce start-->
+            <div class="introduce">
+                <h2>PLANT GALLERY</h2>
+                <p>The following section contains a list of Australia's distinct plant species.</br>Don't know where to start with?
+                  <a href="#" style="color: #97B853;"><strong>Click</strong> </a>to discover a new plant.</p>
+            </div>
+            <!--introduce end-->
+
+            <!--class list start-->
+            <!--template: plants - Category A start-->
+            <div class="category-item">
+            <!--item right: category content-->
+                <div class="category-item-right">
+                    <!--first line: control buttons-->
+                    <div class="row control-line" style="width:100%;border-bottom: 3px solid #363636;margin: 0px ;">
+                        <!--Category name-->
+                        <div class="col">
+                            <h3 style="margin-left: 35px;">Family Name: Achariaceae</h3>
+                        </div>
+                        <!--Picture button on the right-->
+                        <div class="col" style="text-align: right; margin-right: 100px;">
+                            <a href="javascript:void(0);" id="btn-pre0" title="previous">
+                                <img class="btn-img" style="margin-right: 20px;" src="imgs/arrow-pre.png" alt="next"/>
+                            </a>
+                            <a href="javascript:void(0);" id="btn-next0" title="next">
+                                <img class="btn-img" src="imgs/arrow-next.png" alt="next"/>
+                            </a>
+                        </div> 
+                    </div>
+
+                    <!--second line: plant list-->
+                    <div class="plant-list" id="row0">
+                        <!--place 1-->
+                        <div class="plant-item" id="row0-place0">
+                            <div class="plant-img-border">
+                                <a href="javascript:;" id="row0-a0">
+                                    <img src="imgs/seed_1.png" id="row0-img0" class="plant"/>
+                                </a>
+                            </div>
+                            <!--separate bar-->
+                            <div class="plant-separate"></div>
+                            <!--plant name-->
+                            <p class="plant-name" id="row0-name0"></p>
+                        </div>
+
+                        <!--place 2-->
+                        <div class="plant-item" id="row0-place1">
+                            <div class="plant-img-border">
+                                <a href="javascript:;" id="row0-a1">
+                                    <img src="imgs/seed_1.png" id="row0-img1" class="plant"/>
+                                </a>
+                            </div>
+                            <!--separate bar-->
+                            <div class="plant-separate"></div>
+                            <!--plant name-->
+                            <p class="plant-name" id="row0-name1"></p>
+                        </div>
+
+                        <!--place 3-->
+                        <div class="plant-item" id="row0-place2">
+                            <div class="plant-img-border">
+                                <a href="javascript:;" id="row0-a2">
+                                    <img src="imgs/seed_1.png" id="row0-img2" class="plant" />
+                                </a>
+                            </div>
+                            <!--separate bar-->
+                            <div class="plant-separate"></div>
+                            <!--plant name-->
+                            <p class="plant-name" id="row0-name2"></p>
+                        </div>
+
+                        <!--place 4-->
+                        <div class="plant-item" id="row0-place3">
+                            <div class="plant-img-border">
+                                <a href="javascript:;" id="row0-a3">
+                                    <img src="imgs/seed_1.png" id="row0-img2" class="plant" />
+                                </a>
+                            </div>
+                            <!--separate bar-->
+                            <div class="plant-separate"></div>
+                            <!--plant name-->
+                            <p class="plant-name" id="row0-name3"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--template: plants - Category A end-->
+
+            <!--template: plants - Category B start-->
+            <div class="category-item">
+                <!--item right: category content-->
+                <div class="category-item-right">
+                    <!--first line: control buttons-->
+                    <div class="row control-line" style="width:100%;border-bottom: 3px solid #363636;margin: 0px ;">
+                        <!--Category name-->
+                        <div class="col">
+                            <h3 style="margin-left: 35px;">Family Name: Acrobolbaceae</h3>
+                        </div>
+                        <!--Picture button on the right-->
+                        <div class="col" style="text-align: right; margin-right: 100px;">
+                            <a href="javascript:void(0);" id="btn-pre1" title="previous">
+                                <img class="btn-img" style="margin-right: 20px;" src="imgs/arrow-pre.png" alt="next"/>
+                            </a>
+                            <a href="javascript:void(0);" id="btn-next1" title="next">
+                                <img class="btn-img" src="imgs/arrow-next.png" alt="next"/>
+                            </a>
+                        </div> 
+                    </div>
+
+                    <!--second line: plant list-->
+                    <div class="plant-list" id="row1">
+                        <!--place 1-->
+                        <div class="plant-item" id="row1-place0">
+                            <div class="plant-img-border">
+                                <a href="javascript:;" id="row1-a0">
+                                    <img src="imgs/seed_1.png" id="row1-img0" class="plant"/>
+                                </a>
+                            </div>
+                            <!--separate bar-->
+                            <div class="plant-separate"></div>
+                            <!--plant name-->
+                            <p class="plant-name" id="row1-name0"></p>
+                        </div>
+
+                        <!--place 2-->
+                        <div class="plant-item" id="row1-place1">
+                            <div class="plant-img-border">
+                                <a href="javascript:;" id="row1-a1">
+                                    <img src="imgs/seed_1.png" id="row1-img1" class="plant"/>
+                                </a>
+                            </div>
+                            <!--separate bar-->
+                            <div class="plant-separate"></div>
+                            <!--plant name-->
+                            <p class="plant-name" id="row1-name1"></p>
+                        </div>
+
+                        <!--place 3-->
+                        <div class="plant-item" id="row1-place2">
+                            <div class="plant-img-border">
+                                <a href="javascript:;" id="row1-a2">
+                                    <img src="imgs/seed_1.png" id="row1-img2" class="plant" />
+                                </a>
+                            </div>
+                            <!--separate bar-->
+                            <div class="plant-separate"></div>
+                            <!--plant name-->
+                            <p class="plant-name" id="row1-name2"></p>
+                        </div>
+
+                        <!--place 4-->
+                        <div class="plant-item" id="row1-place3">
+                            <div class="plant-img-border">
+                                <a href="javascript:;" id="row1-a3">
+                                    <img src="imgs/seed_1.png" id="row1-img3" class="plant" />
+                                </a>
+                            </div>
+                            <!--separate bar-->
+                            <div class="plant-separate"></div>
+                            <!--plant name-->
+                            <p class="plant-name" id="row1-name3"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--template: plants - Category B end-->
+
+            <!--template: plants - Category C start-->
+            <div class="category-item">
+                <!--item right: category content-->
+                <div class="category-item-right">
+                    <!--first line: control buttons-->
+                    <div class="row control-line" style="width:100%;border-bottom: 3px solid #363636;margin: 0px ;">
+                        <!--Category name-->
+                        <div class="col">
+                            <h3 style="margin-left: 35px;">Family Name: Actinidiaceae</h3>
+                        </div>
+                    </div>
+
+                    <!--second line: plant list-->
+                    <div class="plant-list" id="row2">
+                        <!--place 1-->
+                        <div class="plant-item" id="row2-place0">
+                            <div class="plant-img-border">
+                                <a href="javascript:;" id="row2-a0">
+                                    <img src="imgs/seed_1.png" id="row2-img0" class="plant"/>
+                                </a>
+                            </div>
+                            <!--separate bar-->
+                            <div class="plant-separate"></div>
+                            <!--plant name-->
+                            <p class="plant-name" id="row2-name0"></p>
+                        </div>
+
+                        <!--place 2-->
+                        <div class="plant-item" id="row2-place1">
+                            <div class="plant-img-border">
+                                <a href="javascript:;" id="row2-a1">
+                                    <img src="imgs/seed_1.png" id="row2-img1" class="plant"/>
+                                </a>
+                            </div>
+                            <!--separate bar-->
+                            <div class="plant-separate"></div>
+                            <!--plant name-->
+                            <p class="plant-name" id="row2-name1"></p>
+                        </div>
+
+                        <!--place 3-->
+                        <div class="plant-item" id="row2-place2">
+                            <div class="plant-img-border">
+                                <a href="javascript:;" id="row2-a2">
+                                    <img src="imgs/seed_1.png" id="row2-img2" class="plant" />
+                                </a>
+                            </div>
+                            <!--separate bar-->
+                            <div class="plant-separate"></div>
+                            <!--plant name-->
+                            <p class="plant-name" id="row2-name2"></p>
+                        </div>
+
+                        <!--place 4-->
+                        <div class="plant-item" id="row2-place3">
+                            <div class="plant-img-border">
+                                <a href="javascript:;" id="row2-a3">
+                                    <img src="imgs/seed_1.png" id="row2-img2" class="plant" />
+                                </a>
+                            </div>
+                            <!--separate bar-->
+                            <div class="plant-separate"></div>
+                            <!--plant name-->
+                            <p class="plant-name" id="row2-name3"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--template: plants - Category C end-->
+            <!--class list end-->
+        </div>
+        <!--Right content area End-->
+    </div>
+</body>
+</html>

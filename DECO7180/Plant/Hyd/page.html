@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Main mid prototype</title>
+  <link rel="icon" type="image/x-icon" href="picture\Base picture\logo.png">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <script src="jquery_3.7.1.js"></script>
+  <script src="page_hyd.js"></script>
+</head>
+
+<body>
+  <header class="header_and_mainpart" id="confetti-container">
+    <div class="header_conponents">
+      <img src="picture\Base picture\Plant Discovery.png" alt="Title Picture." class="picture_size">
+      <!--add link to home page here-->
+    </div>
+    <div class="header_conponents" id="search_bar">
+      <input type="text" id="search_input" placeholder="Type something...">
+      <button id="search-button">
+        <img src="picture\Base picture\search.png" id="search_icon">
+        <!--add link to search result page-->
+      </button>
+      <!--search result panel-->
+      <div class="search-dropdown-container"></div>
+    </div>
+    <div class="header_text_conponents">
+      <span class="text_in_header"><a href="https://deco1800teams-stu05t10coldbrew.uqcloud.net/Plant/Index/index.html"
+        class="link">Main</a></span> <!--add link to homepage-->
+      <span class="text_in_header"><a href="https://deco1800teams-stu05t10coldbrew.uqcloud.net/Plant/Gallery/gallery.html"
+          class="link">Gallery</a></span>
+      <!--add link to gallery-->
+      </span>
+    </div>
+  </header>
+  <button id="back-button"><a href="https://deco1800teams-stu05t10coldbrew.uqcloud.net/Plant/Gallery/gallery.html" 
+    style="text-decoration: none;">◀ Back</a></button>
+  <div class="mainpart">
+    <div class="header_and_mainpart">
+      <div> <!--Left of the Main part-->
+        <div class="plants_name">
+          Hydnocarpus <!--plant name(API)-->
+          <span>
+            <img src="picture/Base picture/play-button.png" alt="playback button" id="speakButton">
+          </span>
+        </div>
+        <div class="plants_info droppable-elements">
+          <div class="info_area_and_info_title">Stage:
+            <span class="info_content">Germination</span> <!--Stage part-->
+          </div>
+          <div class="info_area_and_info_title">Kingdom:
+            <span class="info_content droppable" data-droppable-id="KingdomSection"><!--Kingdom (API)--></span>
+          </div>
+          <div class="info_area_and_info_title">class:
+            <span class="info_content droppable" data-droppable-id="ClassSection"></span> <!--class (API)--></span>
+          </div>
+          <div class="info_area_and_info_title">class common name:
+            <span class="info_content droppable" data-droppable-id="ClassCommonSection"></span><!--(API)--></span>
+          </div>
+          <div class="info_area_and_info_title" style="display: flex; align-items: center;">Endemicity:
+            <button class="info_content Endemicity_button" id="nativeButton">Native</button>
+            <button class="info_content Endemicity_button" id="exoticButton">Exotic</button>
+          </div>
+          <div class="info_area_and_info_title">Pest Status:
+            <span class="info_content droppable" data-droppable-id="PestSection"></span><!--(API)-->
+            <div class="cover"></div></span>
+          </div>
+          <div class="info_area_and_info_title">NCA Status:
+            <span class="info_content droppable" data-droppable-id="NCASection"></span>
+          </div>
+
+          <div class="draggable-elements">
+            <p class="draggable" draggable="true" id="KingdomName" data-droppable-id="KingdomSection">1</p>
+            <p class="draggable" draggable="true" id="ClassName" data-droppable-id="ClassSection">1</p>
+            <p class="draggable" draggable="true" id="ClassCommonName" data-droppable-id="ClassCommonSection">1</p>
+            <p class="draggable" draggable="true" id="PestStatus" data-droppable-id="PestSection">1</p>
+            <p class="draggable" draggable="true" id="NCAStatus" data-droppable-id="NCASection">N/A</p>
+          </div>
+        </div>
+      </div>
+      <div class="mainpart_right"> <!--Right of the Main part-->
+        <div class="stage_picture_frame">
+          <!--Put stages pictures here, the bottom one would at the top in website-->
+          <img src="picture\Hydnocarpus\Hydnocarpus-6.png" class="stage_picture" alt="picture_6" index="5">
+          <img src="picture\Hydnocarpus\Hydnocarpus-5.png" class="stage_picture" alt="picture_5" index="4">
+          <img src="picture\Hydnocarpus\Hydnocarpus-4.png" class="stage_picture" alt="picture_4" index="3">
+          <img src="picture\Hydnocarpus\Hydnocarpus-3.png" class="stage_picture" alt="picture_3" index="2">
+          <img src="picture\Hydnocarpus\Hydnocarpus-2.png" class="stage_picture" alt="picture_2" index="1">
+          <img src="picture\Hydnocarpus\Hydnocarpus-1.png" class="stage_picture" alt="picture_1" index="0">
+        </div>
+        <div class="slider_container">
+          <div class="slider">
+            <div class="slider_dragged"></div>
+            <div class="handle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info_area_and_info_title">Description:
+      <span class="info_content"> <!--Description part-->"Hydnocarpus is a genus of medium to large trees
+        in the Family Achariaceae; the genus was previously placed in the now defunct family Flacourtiaceae.
+        Species have been recorded from Indochina, Indonesia, Malaysia and the Philippines.
+        Hydnocarpus has alternate leaves, small dioecious racemose flowers, and capsules of which several
+        are sources of chaulmoogra oil and hydnocarpus oil. A species of Hydnocarpus is thought to host
+        to the Peacock mite Tuckerella filipina."
+      </span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

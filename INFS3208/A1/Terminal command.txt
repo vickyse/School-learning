@@ -1,0 +1,10 @@
+# Make sure to have everything needed related to the website
+# For example, composer.json, nginx.conf, php file in src folder, public ip...etc.
+# Run the following codes on your terminal.
+
+cd path/to/your/dockerfile
+
+docker build -t a1:Hong .
+
+# Make sure port 80 is not occupied by other.
+docker run -d -p 80:80 --name cca1_nginx_php. a1:Hong

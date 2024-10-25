@@ -1,0 +1,45 @@
+.record {
+	border: 2px solid orange;
+	padding: 1em;
+	margin-top: 1em;
+}
+
+#loading {
+	position: fixed;
+	/* 將元素固定在元素固定在視窗上 */
+	top: 0;
+	left: 0;
+	/* 這兩行為確保元素從次窗的做左上開始 */
+	width: 100%;
+	height: 100%;
+	/* 這兩行確保元素可以佔滿整個視窗，因為你從右上開始又是寬度高度為100%的視窗 */
+	background-color: rgba(255, 255, 255, 0.8);
+	/* rgba為指定顏色的指令，0.8是指透明度，80%透明 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+	/* 確保他在所有視窗其他元素之上 */
+
+	transition: all 0.5s ease;
+	/* 讓整個元素在收到要變透明時的指令後是慢慢消失 */
+}
+
+body.loaded #loading {
+	opacity: 0;
+	/* 這個要配合transition使用。*/
+	visibility: hidden;
+}
+
+#loading::before {
+	content: "";
+	background-image: url(/Users/linker0730/Downloads/W2_Workshop_Exercise/images/loading.gif);
+	background-size: cover;
+	/* 讓圖像覆蓋整個#loading元素 */
+	width: 100px;
+	/* 設置圖像寬度 */
+	height: 100px;
+	/* 設置圖像高度 */
+	position: absolute;
+	/* 將圖像定位在#loading內 */
+}
